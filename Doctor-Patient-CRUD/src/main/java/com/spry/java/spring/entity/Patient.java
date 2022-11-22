@@ -9,21 +9,20 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Doctor")
-public class Doctor {
+@Table(name = "Patient")
+public class Patient {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int pId;
+	private String pName;
 	private int dId;
 
-	private String dName;
-
-	private int pId;
-
-	public Doctor() {
+	public Patient() {
 	}
 
-	public Doctor(String dName) {
-		this.dName = dName;
+	public Patient(String pName, int dId) {
+		this.pName = pName;
+		this.dId = dId;
 	}
 }
