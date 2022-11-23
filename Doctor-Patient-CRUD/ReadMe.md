@@ -12,3 +12,8 @@ Table: Patient (One-To-One with doctor mapping)
     - pId: Pateint unique ID.
     - pName: Pateint name.
     - dId: Current doctor assigned to patient, if '0' no doctor assigned.
+    
+
+Default MySQL port : 3306
+Username: root
+Password: password
